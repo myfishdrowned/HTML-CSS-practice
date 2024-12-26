@@ -35,3 +35,16 @@ img {
     display: block;
     max-inline-size: 100%;
 }
+
+
+/* ----------------------------------------------------------------------------------------- */
+html {
+    font-size: 15px;
+}
+
+main p {
+    /* font-size: 3rem; */
+    font-size: clamp(0.8rem, 4vh, 1.3rem);
+    line-height: 4vh;
+    line-height: calc(1.2rem + 4vh);
+}
