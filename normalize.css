@@ -35,3 +35,9 @@ img {
     display: block;
     max-inline-size: 100%;
 }
+
+
+
+h2 {
+    font-family: 'Nabla', 'Times New Roman', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
