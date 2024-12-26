@@ -1,0 +1,15 @@
+.required::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
+
+.required::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: seagreen;
+}
