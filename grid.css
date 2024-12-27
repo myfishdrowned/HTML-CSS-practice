@@ -1,0 +1,16 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    /* outline: auto; */
+}
+
+.flex-container div,
+.grid-container div {
+    outline: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr)
+}
