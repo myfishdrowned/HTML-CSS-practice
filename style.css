@@ -114,8 +114,6 @@ html {
     text-align: left;
 }
 
-/* SOLUTION */
-
 .container {
     display: grid;
     grid-template-columns: 300px 900px;
