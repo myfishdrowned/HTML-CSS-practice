@@ -7,7 +7,7 @@ body {
 }
 
 :root {
-    --base-unit: 65px;
+    --base-unit: 70px;
 }
 
 p,
@@ -23,6 +23,7 @@ p,
     display: grid;
     grid-template-columns: calc(3 * var(--base-unit)) calc(9 * var(--base-unit));
     grid-template-rows: calc(2 * var(--base-unit)) calc(2 * var(--base-unit)) calc(6 * var(--base-unit)) calc(2 * var(--base-unit));
+    /* grid-template: calc(2 * var(--base-unit)) calc(2 * var(--base-unit)) calc(6 * var(--base-unit)) calc(2 * var(--base-unit)) / calc(3 * var(--base-unit)) calc(9 * var(--base-unit)); */
     gap: 5px
 }
 
