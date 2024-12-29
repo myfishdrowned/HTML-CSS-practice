@@ -1,4 +1,13 @@
-* {
+:root {
+    background-color: #181818;
+    color: silver
+}
+
+.container {
+    display: grid;
+}
+
+/* * {
     margin: 0;
     padding: 0;
 }
@@ -89,4 +98,4 @@
 .footer p {
     font-size: 13px;
     font-weight: normal;
-}
+} */
