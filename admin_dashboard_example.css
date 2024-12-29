@@ -1,0 +1,305 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+    font-family: roboto;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+
+
+/* PROJECT CSS */
+
+li {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+li>img,
+.side-dash>img {
+    filter: invert(0.9);
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 160px 720px;
+    color: white;
+    background-color: #E2E8F0;
+}
+
+.side-dash {
+    display: flex;
+    align-items: center;
+}
+
+.side-dash>img {
+    height: 48px;
+}
+
+.sidebar {
+    grid-row: 1 / 3;
+    display: grid;
+    background-color: #6d28d9;
+    padding: 15px;
+    grid-template-rows: 100px 1fr 2fr;
+    gap: 15px;
+}
+
+.side-list>ul {
+    padding: 15px 0 15px 15px;
+    display: grid;
+    height: 100%;
+    align-content: space-between;
+    gap: 30px;
+    justify-items: start;
+}
+
+.support-list {
+    padding-top: 50px;
+}
+
+.support-list>ul {
+    display: grid;
+    gap: 10px;
+    padding: 15px 0 15px 15px;
+    justify-items: start;
+}
+
+li {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 5px;
+}
+
+
+.navbar {
+    background-color: white;
+    color: black;
+}
+
+.nav-profile>img {
+    height: 50px;
+}
+
+.welcome>img {
+    height: 50px;
+}
+
+.dash-body {
+    color: black;
+}
+
+.navbar>div>* {
+    padding: 10px;
+}
+
+.welcome-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.welcome-buttons>button {
+    background-color: #6d28d9;
+    color: white;
+    font-weight: bold;
+    border-radius: 14px;
+    flex: 1;
+    height: 35px;
+}
+
+.dash-body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(4, 180px);
+}
+
+.dash-body>div {
+    padding: 15px;
+}
+
+.projects {
+    grid-row: 1 / 5;
+}
+
+.announcements {
+    grid-area: 1/2/3/3;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.trending {
+    grid-area: 3/2/5/3;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projects-grid>div {
+    height: 180px;
+    color: #363636;
+    margin: 10px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    border-left: 4px solid #6d28d9;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 5fr 1fr;
+}
+
+.projects-grid>div>p {
+    grid-area: 1/1/3/2;
+}
+
+.div-icons {
+    display: flex;
+    justify-content: space-between;
+    grid-area: 2/2/3/3;
+}
+
+.div-icons>img {
+    height: 25px;
+}
+
+.nav-top {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding-left: 15px;
+}
+
+.nav-input,
+.nav-profile {
+    display: flex;
+    align-items: center;
+}
+
+.nav-input img {
+    height: 40px;
+}
+
+.nav-input input {
+    width: 90%;
+    height: 40px;
+    border-radius: 23px;
+    border: transparent;
+    background-color: #E2E8F0;
+}
+
+.nav-profile {
+    justify-self: end;
+    gap: 10px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.nav-bottom {
+    display: grid;
+    background-color: white;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+}
+
+.welcome {
+    display: flex;
+    gap: 10px;
+    margin-left: 100px;
+}
+
+.trending img {
+    height: 60px;
+    border-radius: 50%;
+}
+
+.trending>div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.user-details :first-child {
+    font-weight: bold;
+}
+
+.user-details :last-child,
+.announcements>div :last-child {
+    color: #636363;
+    font-size: 15px;
+}

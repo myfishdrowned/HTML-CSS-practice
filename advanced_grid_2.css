@@ -76,7 +76,6 @@
 .article {
     background-color: #bccbde;
     display: grid;
-    /* grid-template: repeat(3, 1fr) / repeat(4, 1fr); */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
 }
