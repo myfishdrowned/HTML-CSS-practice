@@ -44,39 +44,55 @@ img {
 
 .container {
     display: grid;
-    grid-template: 1fr 1fr 4fr / 0.7fr 3fr 1fr;
+    grid-template: 1fr 0.7fr 0.7fr 4fr / 0.7fr 2fr 1fr;
     gap: 10px;
     padding: 5px;
 }
 
-.header {
-    grid-column: 2 / 3;
-    background-color: #282828;
+.topRightOptions {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
 }
 
-.nav {
+.lowerHeader {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.shareButtons {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+
+.topNav {
     grid-row: 1 / 4;
+    grid-column: 1 / 2;
+}
+
+.bottomNav {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
 }
 
 .article {
     display: grid;
-    grid-row: 3 / 5;
+    grid-row: 4 / 6;
     grid-column: 2 /5;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 200px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 200px);
 }
 
 #projectTitle {
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     grid-column: 2 / 3;
 }
 
 .announcements {
     grid-column: 3 / 4;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
 }
 
 .trending {
     grid-column: 3 / 4;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
 }
